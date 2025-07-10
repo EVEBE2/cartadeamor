@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Un mes contigo 💖</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6e6, #ffccff);
+      font-family: 'Segoe UI', sans-serif;
+      color: #4d0039;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-top: 40px;
+      color: #e60073;
+      text-shadow: 2px 2px 5px #fff;
+    }
+
+    /* Letras animadas */
+    #titulo span {
+      display: inline-block;
+      animation: brincar 1.5s ease-in-out infinite;
+    }
+
+    #titulo span:nth-child(1) { animation-delay: 0s; }
+    #titulo span:nth-child(2) { animation-delay: 0.1s; }
+    #titulo span:nth-child(3) { animation-delay: 0.2s; }
+    #titulo span:nth-child(4) { animation-delay: 0.3s; }
+    #titulo span:nth-child(5) { animation-delay: 0.4s; }
+    #titulo span:nth-child(6) { animation-delay: 0.5s; }
+    #titulo span:nth-child(7) { animation-delay: 0.6s; }
+    #titulo span:nth-child(8) { animation-delay: 0.7s; }
+    #titulo span:nth-child(9) { animation-delay: 0.8s; }
+    #titulo span:nth-child(10) { animation-delay: 0.9s; }
+    #titulo span:nth-child(11) { animation-delay: 1s; }
+    #titulo span:nth-child(12) { animation-delay: 1.1s; }
+
+    @keyframes brincar {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .carta {
+      width: 90%;
+      max-width: 800px;
+      margin: 30px auto 100px auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 102, 153, 0.5);
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8em;
+      text-align: justify;
+    }
+
+    .foto {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .foto img {
+      max-width: 80%;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #e60073;
+    }
+
+    /* Corazones flotantes */
+    .corazon {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      transform: rotate(45deg);
+      animation: flotar 10s linear infinite;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    .corazon::before,
+    .corazon::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      border-radius: 50%;
+    }
+
+    .corazon::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .corazon::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes flotar {
+      0% {
+        bottom: -20px;
+        left: calc(100% * var(--x));
+        opacity: 1;
+      }
+      100% {
+        bottom: 100%;
+        left: calc(100% * var(--x) + 30px);
+        opacity: 0;
+      }
+    }
+
+    /* Botón corazón scroll */
+    .boton-corazon {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #ff6699;
+      color: white;
+      font-size: 24px;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff3385;
+      animation: latido 1s infinite;
+      z-index: 10;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titulo">
+    <span>T</span><span>E</span>
+    <span>A</span><span>M</span><span>O</span>
+    <span>M</span><span>I</span>
+    <span>A</span><span>M</span><span>O</span><span>R</span> ❤️
+  </h1>
+
+  <div class="carta" id="carta">
+    <p>La fecha exacta se me escapa, pero lo que jamás voy a olvidar fue el momento en que te conocí. Ese chico, con su andar tranquilo —casi etéreo— y esa mirada que no buscaba encontrarme… pero aun así lo hizo. Como si por accidente me hubieras visto… y yo me hubiera quedado atrapada ahí.</p>
+
+    <p>El día que apareciste con la cabeza rapada, “Pelón”, admito que me reí. Pero al verte tan seguro, tan relajado solo pensé: este niño esta loco, y no me equivoque jajaja. Tu forma de ser, tan auténtica y despreocupada, empezó a hacerme reír más de lo normal. Había algo en ti, en tu risa fácil, en tu buena vibra constante, que me hacía querer estar cerca… aunque no de forma romántica. Solo… como amigos.</p>
+
+    <p>No solo estabas guapo, eras inteligente, bueno con las mates y con una memoria que me dejaba en shock. Recordabas cosas que yo misma había olvidado haber dicho o hecho. Así fue como empezamos a hablar más. Y me encantaba que, cada vez que se me ocurría un plan —por más loco o espontáneo que fuera— tú siempre decías que sí… aunque soltaras tu clásica: “no tengo dinero”.</p>
+
+    <p>Pero dentro de mí empezaron a surgir sentimientos… raros, bonitos, como si mi alma sintiera calma al estar contigo. Y sin quererlo, empecé a pensar: "Es demasiado lindo."</p>
+
+    <p>Las bromas entre nosotros se volvieron rutina. Y cuando mis amig@s veían lo bien que me llevaba contigo, empezaron a chipearnos. Yo me reía, decía que no eras mi tipo, que si tanto les gustabas, se los presentaba. Y sí, lo hice… pero entonces, algo cambió en mí.</p>
+
+    <p>¿Qué le ven tanto? Y me sorprendía que todos dijeran que eras lindo. Hasta que… sin darme cuenta, yo también empecé a pensarlo. Te empecé a ver diferente. Y me pregunté: ¿Cuál es la posibilidad de que se enamore de mí? Era una idea tan loca, tan improbable… que parecía un sueño. Uno de esos que no te atreves a contar por miedo a romperlo.</p>
+
+    <p>Lo curioso es que cuando empecé a pedirte besos en la mejilla, lo hacía como si nada. Nunca me ponías caras, nunca me decías que no. Solo me sonreías. Y fue ahí… tu risa constante, tu compañía incondicional, tu forma de estar sin pedir nada… que mi corazón y mi mente empezaron —sin pedir permiso— a pertenecerte.</p>
+
+    <p>Vaya… y es que yo amo todo de ti. Me fascina tu humor tan lindo, la forma en que me tratas, tu energía, tus locuras, hasta la primera vez que te pedí un beso y me lo negaste, jajaja. Son recuerdos que me encanta tener, por más X que suenen. Porque en serio… nunca pensé que terminaríamos siendo novios.</p>
+
+    <p>Y así, como si nada, pasamos de ser mejores amigos a algo más. Así, de la nada, te clavaste aquí: en mi vida, en mi corazón, y en mi mente.</p>
+
+    <div class="foto">
+      <img src="Novios1.jpg" alt="Foto de nosotros juntos">
+    </div>
+
+    <p>Tengo 2 ojos para verte, 5 sentidos para sentirte, 7 días a la semana para pensarte… y una vida para amarte.</p>
+
+    <p><strong>Bueno amor, gracias por un mes más a tu lado</strong>, por cada risa, cada abrazo y cada momento que me has regalado. Espero que este sea solo el comienzo de muchos más juntos, porque contigo todo es más bonito. <strong>Mi manguito 💖 kisses guapi</strong></p>
+  </div>
+
+  <!-- Botón corazón para bajar -->
+  <button class="boton-corazon" onclick="desplazarAbajo()">💗</button>
+
+  <!-- corazones flotando -->
+  <script>
+    for (let i = 0; i < 30; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'corazon';
+      heart.style.setProperty('--x', Math.random());
+      heart.style.left = `${Math.random() * 100}%`;
+      heart.style.animationDelay = `${Math.random() * 10}s`;
+      heart.style.backgroundColor = ['#ff99cc', '#ff4d6d', '#ff80bf'][Math.floor(Math.random() * 3)];
+      document.body.appendChild(heart);
+    }
+
+    function desplazarAbajo() {
+      const carta = document.getElementById("carta");
+      carta.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
+
